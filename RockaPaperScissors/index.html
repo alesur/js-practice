@@ -2,13 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <div id="container">
-        <h1>Rock-Paper-Scissors</h1>
-
+<div class="container">
+    <h1>Rock-Paper-Scissors</h1>
+    <div class="flex-box-rps" id="flex-box-rps-div">
+        <img id="rock" src="http://icons.iconarchive.com/icons/anton-gerasimenko/harry-potter/128/Philosophers-Stone-2-icon.png" width="150" height="150" alt="" onclick="rpsGame(this)">
+        <img id="paper" src="http://icons.iconarchive.com/icons/designcontest/ecommerce-business/256/document-icon.png" width="150" height="150" alt="" onclick="rpsGame(this)">
+        <img id="scissors" src="http://icons.iconarchive.com/icons/beauticons/office-tools/128/Scissors-icon.png" width="150" height="150" alt="" onclick="rpsGame(this)">
     </div>
-    <script src="index.js"></script>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
