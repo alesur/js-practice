@@ -1,16 +1,16 @@
 function rpsGame(yourChoise) {
-    console.log(yourChoise.id);
+    // console.log(yourChoise.id);
     let humanChoise, botChoise;
     humanChoise = yourChoise.id;
 
     botChoise = numberToChoice(randomGenerator());
-    console.log('Computer choise', botChoise);
+    // console.log('Computer choise', botChoise);
 
     result = decideWinner(humanChoise, botChoise);
-    console.log(result);
+    // console.log(result);
 
     message = finalMessage(result);
-    console.log(message);
+    // console.log(message);
     rpsFrontEnd(yourChoise.id, botChoise, message);
 }
 
