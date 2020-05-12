@@ -700,9 +700,15 @@
                 }
                 
                 .product-selector__img {
+                    position: absolute;
                     display: block;
                     max-width: 95%;
-                    height: 100%;
+                    height: 70%;
+                    opacity: 0;
+                }
+                
+                .product-selector__img--active {
+                    opacity: 1;
                 }
                 
                 .product-selector__options {
@@ -792,6 +798,12 @@
                 }
                 
                 .btn-size:focus {
+                    outline: 0;
+                    border: 2px solid var(--yellow);
+                    background-color: var(--yellow);
+                }
+                
+                .selected {
                     outline: 0;
                     border: 2px solid var(--yellow);
                     background-color: var(--yellow);

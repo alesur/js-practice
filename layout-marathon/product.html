@@ -16,7 +16,7 @@
     <div class="wrapper">
         <section class="hero-small">
             <header class="header">
-                <a href="/" class="logo">
+                <a href="" class="logo">
                     <img src="./img/content/logos/logo-main.png" alt="lost shirt logo" class="logo__pic">
                 </a>
                 <a href="mailto:lostinspace@mail.ru" class="mail">
@@ -43,7 +43,11 @@
 
             <div class="product-selector__view">
                 <div class="product-selector__item">
-                    <img src="./img/tshirts/tshirt_07.png" alt="rick-and-morty" class="product-selector__img">
+                    <img data-image="black" src="./img/tshirts/tshirt_07.png" alt="rick-and-morty" class="product-selector__img product-selector__img--active">
+                    <img data-image="white" src="./img/tshirts/tshirt_08.png" alt="rick-and-morty" class="product-selector__img">
+                    <img data-image="green" src="./img/tshirts/tshirt_09.png" alt="rick-and-morty" class="product-selector__img ">
+                    <img data-image="blue" src="./img/tshirts/tshirt_10.png" alt="rick-and-morty" class="product-selector__img">
+                    <img data-image="red" src="./img/tshirts/tshirt_11.png" alt="rick-and-morty" class="product-selector__img">
                 </div>
             </div>
             <div class="product-selector__options">
@@ -74,23 +78,23 @@
                     </div>
                     <div class="info__color">
                         <label class="info__color--container">
-                            <input  name="selector" class="color-selector color-selector--black" type="radio">
+                            <input data-image="black" name="selector" class="color-selector" type="radio">
                             <span class="checkmark checkmark--black"></span>
                         </label>
                         <label class="info__color--container">
-                            <input  name="selector" class="color-selector color-selector--black" type="radio">
+                            <input data-image="white" name="selector" class="color-selector" type="radio">
                             <span class="checkmark checkmark--white"></span>
                         </label>
                         <label class="info__color--container">
-                            <input  name="selector" class="color-selector color-selector--black" type="radio">
+                            <input data-image="green" name="selector" class="color-selector" type="radio">
                             <span class="checkmark checkmark--green"></span>
                         </label>
                         <label class="info__color--container">
-                            <input  name="selector" class="color-selector color-selector--black" type="radio">
+                            <input data-image="blue" name="selector" class="color-selector" type="radio">
                             <span class="checkmark checkmark--blue"></span>
                         </label>
                         <label class="info__color--container">
-                            <input  name="selector" class="color-selector color-selector--black" type="radio">
+                            <input data-image="red" name="selector" class="color-selector"  type="radio">
                             <span class="checkmark checkmark--red"></span>
                         </label>
                     </div>
@@ -341,9 +345,8 @@
 
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="./scripts/sidebar-menu.js"></script>
-    <script src="./scripts/fade-slider.js"></script>
     <script src="./scripts/filters.js"></script>
     <script src="./scripts/selector.js"></script>
 
