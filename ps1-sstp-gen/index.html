@@ -13,10 +13,30 @@
 
     <div class="container">
         <div class="input-section">
-
+            <div class="form">
+                <form action="#">
+                    <label>VPN Name:</label>
+                    <input type="vpn-name" name="vpn-name"><br><br>
+                    <label>Server address</label>
+                    <input type="srv-address" name="srv-address"><br><br>
+                    <input type="radio" name="tunnel-type" value="Pptp">
+                    <label for="Pptp">PPTP</label><br>
+                    <input type="radio" name="tunnel-type" value="L2TP/IPSec">
+                    <label for="L2TP/IPSec">L2TP/IPSec</label><br>
+                    <input type="radio" name="tunnel-type" value="Sstp">
+                    <label for="Sstp">SSTP</label><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
         <div class="code-section">
-            Code
+            <code>
+            Add-VpnConnection -Name
+            <div class="vpn-name"></div> -ServerAddress
+            <div class="srv-address"></div> -TunnelType
+            <div class="tunnel-type">"Sstp"</div> -AuthenticationMethod
+            <div class="auth-method">MsChapv2</div> -EncryptionLevel "Required" -UseWinlogonCredential -SplitTunneling -AllUserConnection -RememberCredential
+        </code>
         </div>
     </div>
 

@@ -11,14 +11,30 @@ body {
 }
 
 .input-section {
-    border-style: solid;
+    flex-direction: row;
+    align-items: center;
     flex-grow: 1;
     height: 100%;
 }
 
 .code-section {
-    border-style: solid;
     flex-grow: 1;
     height: 100%;
-    background: hsla(100, 50%, 60%, 1);
+    width: 20%;
+    padding: 40px;
+    background: rgba(30, 30, 30, 1);
+    color: rgba(156, 220, 254, 1);
+    font-size: 20px;
+}
+
+.vpn-name,
+.srv-address,
+.tunnel-type {
+    display: inline;
+    color: rgba(206, 145, 120, 1);
+}
+
+.auth-method {
+    display: inline;
+    color: rgba(44, 124, 214, 1);
 }
